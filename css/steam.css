@@ -12,47 +12,324 @@ a {
   color: #333;
   text-decoration: none;
 }
-
+/* 공통 영역 */
+.inner {
+  margin: 0 auto;
+  width: 1040px;
+  /* background-color: #1d2839; */
+}
 /* 전체 영역 */
-.wrap{
-    width: 1440px;
-    height: 1024px;
-    background-color: antiquewhite;
+.wrap {
+  background-color: #1d2839;
 }
 /* 헤더 */
-header{
-    width: 100%;
-    height: 180px;
-    background-color: aliceblue;
+header {
+  height: 180px;
+  margin: 0 auto;
 }
 /* 헤더 top */
-.header-top{
-    display: flex;
-    width: 100%;
-    height: 120px;
-    background-color: burlywood;
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  background-color: #181d25;
 }
 /* 로고 */
-.logo img{
-    margin: 22px 28px;
-    width: 230px;
-    height: 75px;
+.logo img {
+  margin: 22px 28px;
+  width: 230px;
+  /* height: 75px; */
 }
 /* 헤더 메뉴 */
-.header-menu{
-    background-color: aliceblue;
+.header-menu {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 0;
+  /* background-color: aliceblue; */
 }
-.header-menu ul{
-    display: flex;
-    gap: 30px;
-    font-size: 22px;
-    font-weight: 400;
+.header-menu ul {
+  display: flex;
+  gap: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  /* background-color: aqua; */
 }
+.header-menu ul li a {
+  color: #fff;
+}
+/* 메뉴 호버 */
+.header-menu ul li a::after {
+  content: "";
+  display: block;
+  margin-top: 3px;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s;
+  background-color: #3fa0ff;
+}
+.header-menu ul li a:hover::after {
+  width: 100%;
+  height: 3px;
+}
+.header-menu ul li a:hover {
+  color: #3fa0ff;
+}
+
 /* 헤더 오른쪽 */
-.header-right{
-    display: flex;
+.header-right {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
 }
 /* 다운 버튼 */
-.header-right > button{
-    padding: 10px;
+.header-right .inastall {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 3px 7px;
+  width: 135px;
+  height: 27px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: #5f7e00;
+}
+.inastall img {
+  width: 22px;
+}
+/* 호버 */
+.header-right .inastall:hover {
+  background-color: #2a4100;
+}
+
+/* 로그인, 언어 설정 */
+.login {
+  display: flex;
+}
+.login a {
+  font-size: 14px;
+  color: white;
+}
+/* 구분선 */
+.login .sign::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 10px;
+  background-color: #fff;
+}
+.login .lang {
+  display: flex;
+  align-items: center;
+}
+/* 호버 */
+.login a:hover {
+  color: #3fa0ff;
+}
+
+/* 헤더 아래 */
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+  background-color: #1a2636;
+}
+/* 메뉴 2 */
+.menu2 ul {
+  display: flex;
+  align-items: center;
+}
+.menu2 ul li a {
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+  color: #fff;
+}
+.menu2 ul li a i {
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+/* 호버 */
+.menu2 ul li a:hover {
+  color: #3fa0ff;
+}
+/* 검색창 */
+.search {
+  display: flex;
+}
+.search input {
+  padding-left: 10px;
+  width: 380px;
+  height: 35px;
+  border: 1px solid #454e5c;
+  border-radius: 2px 0 0 2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #b3b6ba;
+  background-color: #1a2636;
+}
+.search > p {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  background-color: #3fa0ff;
+}
+.search > p i {
+  padding: 10px;
+  color: #fff;
+}
+/* 호버 */
+.search a {
+  display: block;
+}
+.search a:hover {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #31739a;
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+/* 배너 */
+.banner {
+  margin: 40px 0;
+}
+.banner img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.banner img:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transform: scale(1.01);
+}
+
+/* 메인 */
+main {
+  padding-bottom: 20px;
+}
+/* 게임 리스트 text */
+.game-list-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.game-list-text .browse {
+  font-size: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 20px 5px 20px;
+}
+/* 게임 리스트 영역 */
+.game-list-wrap li {
+  width: 340px;
+  /* height: 230px; */
+  /* background-color: #31739a; */
+}
+/* 호버 */
+.game-list-wrap li a {
+  display: block;
+  /* margin-top: 15px; */
+  width: 100%;
+  /* height: 100%; */
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.game-list-wrap li a:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transform: scale(1.02);
+}
+/* 이미지 */
+.game-img img {
+  display: block;
+  width: 100%;
+  /* height: 165px; */
+}
+/* 가격 전체 영역 */
+.price-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  /* height: 65px; */
+  background-color: #31739a;
+}
+/* 가격 영역 */
+.price {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  width: 160px;
+  /* height: 41px; */
+}
+/* 가격 (왼) */
+.price-left {
+  width: 80px;
+  font-size: 24px;
+  padding-top: 2px;
+  text-align: center;
+  color: #c1ed00;
+  background-color: #4f6b1c;
+}
+/* 가격 (오른) */
+.price-right {
+  text-align: end;
+  width: 80px;
+  padding: 3px 8px;
+  font-size: 14px;
+  background-color: #1a2f42;
+}
+.price-right .origin {
+  position: relative;
+  font-size: 10px;
+  color: #999;
+}
+/* 취소선 */
+.price-right .origin::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 6.5px;
+  width: 47px;
+  height: 100%;
+  border-top: 1px solid #999;
+  transform: rotate(-6deg);
+}
+.price-right .sale {
+  color: #c1ed00;
+}
+
+/* 아이콘 */
+.price-right .origin i {
+  margin-right: 5px;
+  color: #999;
+  width: 8px;
+  height: 8px;
+}
+.price-right .sale i {
+  display: inline-block;
+  margin-right: 15px;
+  color: #c1ed00;
+  width: 5px;
+  height: 5px;
+}
+
+/* 게임 영역 1 2 3 */
+.game-list-wrap {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
 }

@@ -4,54 +4,286 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>스팀</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/steam.css" />
   </head>
   <body>
     <!-- 전체 영역 -->
     <div class="wrap">
       <!-- 헤더 -->
-       <header>
+      <header>
         <!-- 헤더 top -->
-         <div class="header-top">
-            <!-- 로고 -->
-             <div class="logo">
-                <img src="/images/logo.png" alt="logo">
-             </div>
-             <!-- 헤더 메뉴 -->
-             <div class="header-menu">
-                <ul>
-                <li class="support"><a href="#">SUPPORT</a></li>
-                <li class="about"><a href="#"></a>ABOUT</a></li>
-                <li class="community"><a href="#"></a>COMMUNITY</a></li>
-                <li class="store"><a href="#"></a>STORE</a></li>
-                </ul>
-             </div>
-             <!-- 헤더 오른쪽 -->
-              <div class="header-right">
-                <!-- 다운 버튼 -->
-                <button type="submit">Install Steam</button>
-                <!-- 로그인, 언어 설정 (사이에 구분선 넣기)-->
-                 <p class="sign">sign in</p>
-                 <p class="lang">language</p>
-              </div>
-         </div>
-         <!-- 헤더 아래 -->
-         <div class="header-bottom">
-            <!-- 메뉴 2 -->
+        <div class="header-top">
+          <!-- 로고 -->
+          <div class="logo">
+            <a href="#"> <img src="/images/logo.png" alt="logo" /></a>
+          </div>
+          <!-- 헤더 메뉴 -->
+          <div class="header-menu">
             <ul>
-                <li class="browse"><a href="#">browse</a></li> 
-                <li class="Recommandation"><a href="#"></a>recommandation</a></li> 
-                <li class="categories"><a href="#"></a>Categories</a></li> 
-                <li class="hardware"><a href="#"></a>Hardware</a></li> 
-                <li class="way-to-play"><a href="#"></a>Way to Play</a></li> 
-                <li class="special-sections"><a href="#"></a>Special Sections</a></li> 
+              <li class="support"><a href="#">SUPPORT</a></li>
+              <li class="about"><a href="#">ABOUT</a></li>
+              <li class="community"><a href="#">COMMUNITY</a></li>
+              <li class="store"><a href="#">STORE</a></li>
             </ul>
-            <!-- 검색창 (버튼 추가하기)-->
-            <div class="search">
-                <input type="text" placeholder="Search the store">
+          </div>
+          <!-- 헤더 오른쪽 -->
+          <div class="header-right">
+            <!-- 다운 버튼 -->
+            <a href="#" class="install-btn">
+              <div class="inastall">
+                <img src="/images/install_icon.png" alt="설치" />
+                Install Steam
+              </div>
+            </a>
+            <!-- 로그인, 언어 설정 -->
+            <div class="login">
+              <p><a class="sign" href="#">sign in</a></p>
+              <p>
+                <a class="lang" href="#"
+                  >language<i class="fa-solid fa-sort-down"></i
+                ></a>
+              </p>
             </div>
-         </div>
-       </header>
+          </div>
+        </div>
+        <!-- 헤더 아래 -->
+        <div class="header-bottom">
+          <!-- 메뉴 2 -->
+          <div class="menu2">
+            <ul>
+              <li>
+                <a href="#">browse<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  >recommandation<i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#">Categories<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Hardware<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Way to Play<i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Special Sections<i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- 검색창 -->
+          <div class="search">
+            <input type="text" placeholder="Search the store" />
+            <p>
+              <a class="search-btn" href="#">
+                <i class="fa-brands fa-sistrix"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- inner -->
+      <div class="inner">
+      <!-- 배너 -->
+        <div class="banner">
+          <a href="#"><img src="images/banner.jpg" alt="banner" /></a>
+        </div>
+        <!-- 메인 -->
+        <main>
+          <!-- 게임 리스트 text -->
+          <div class="game-list-text">
+            <span class="discounts">Discounts & Events</span>
+            <span><a class="browse" href="#">BROWSE MORE</a></span>
+          </div>
+          <!-- 게임 리스트 영역 -->
+          <ul class="game-list-wrap">
+            <!-- 게임 영역 1-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/repo.jpg" alt="repo" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-30%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>10,700
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>7,290
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- 게임 영역 2-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/hogwarts.jpg" alt="hogwarts" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-85%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>79,800
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>11,970
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- 게임 영역 3-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/enshrouded.jpg" alt="enshrouded" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-25%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>31,000
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>24,800
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <!-- 게임 리스트 영역 2 -->
+          <ul class="game-list-wrap">
+            <!-- 게임 영역 1-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/satisfactory.jpg" alt="satisfactory" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-30%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>42,000
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>29,400
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- 게임 영역 2-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/battlefield.jpg" alt="battlefield" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-95%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>55,000
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>2,750
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!-- 게임 영역 3-->
+            <li>
+              <a href="#">
+                <!-- 이미지 -->
+                <div class="game-img">
+                  <img src="images/final.jpg" alt="final" />
+                </div>
+                <!-- 가격 전체 영역 -->
+                <div class="price-wrap">
+                  <!-- 가격 영역 -->
+                  <div class="price">
+                    <!-- 가격 (왼) -->
+                    <div class="price-left">
+                      <p>-20%</p>
+                    </div>
+                    <!-- 가격 (오른) -->
+                    <div class="price-right">
+                      <p class="origin">
+                        <i class="fa-solid fa-won-sign"></i>62,800
+                      </p>
+                      <p class="sale">
+                        <i class="fa-solid fa-won-sign"></i>37,680
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </main>
+      </div>
     </div>
   </body>
 </html>
